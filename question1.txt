@@ -1,0 +1,28 @@
+Question Title: Advanced File Management
+Question Link: https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+Solution:
+
+mkdir project-files
+cd project-files
+touch report.docx
+touch summary.docx
+touch draft.docx
+cp report.docx report_backup.docx
+mkdir old
+mv draft.docx old/
+mv summary.docx final_summary.docx
+cp final_summary.docx old/
+rm report_backup.docx
+
+Approach:
+1. First, I checked in which directory I was present. I was in box/ directory.
+2. Then, as per the question I created a directory named project-files using mkdir command and navigated into it using cd command.
+3. After that I created 3 files report.docx, summary.docx, draft.docx using touch command
+4. Then, I made a copy of report.docx and named it report_backup.docx using cp command
+5. After that I created a directory named old/ using mkdir command
+6. Then I moved draft.docx to old/ directory using mv command
+7. Also I renamed summary.docx to final_summary.docx using mv command
+8. Then I copied final_summary.docx into old/ directory
+9. At last I removed report_backup.docx
+
+Result: The project-files directory contains two files final_summary.docx and report.docx. It also consists of a directory old. In old/ there are two files, one is draft.docx and the other file is final_summary.docx which is copied from project-files directory
