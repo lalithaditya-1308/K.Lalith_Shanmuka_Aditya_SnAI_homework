@@ -1,0 +1,25 @@
+Question Title: Execute a Python Script Directly
+
+Question Link: https://my.newtonschool.co/playground/code/mepmefz373b4?lecture_hash=t5qc0u6ap8tg
+
+Solution:
+
+which python3
+touch hello.py
+echo '#!/usr/bin/env python3' > hello.py
+echo 'print("Hello from Python")' >> hello.py
+chmod +x hello.py
+./hello.py
+
+Approach:
+1. First I checked whether the python3 exists in termianl or not.
+2. Then I created a file hello.py using touch command.
+3. Then I have written the path of python3 script.
+4. After that I wrote the text that has to be displayed in in terminal.
+5. Then I gave it permission to get executed.
+6. At last used ./ to check whether it is executed or not.
+ 
+Result : Now the python3 script is present in terminal and we can write and execute the code of python directly in termianl.
+
+
+
