@@ -1,0 +1,32 @@
+Question Title: Create a Project Folder Structure
+
+Question Link: https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+
+Solution: 
+cat create-service
+cat <<EOF>create-service
+mkdir -p service/controllers/
+mkdir -p service/models/
+mkdir -p service/routes/
+mkdir -p service/middleware/
+rm -rf service/controller service/model service/router
+rm -f service/readme.txt service/app.js
+echo 'console.log("Server started");' > service/server.js
+echo "API Service" > service/README.md
+EOF
+chmod +x create-service
+./create-service
+
+Approach: 
+1. First I read what was in the directory create-service using cat command
+2. Then I used cat<<EOF command to start editing the create-service directory  
+3. From there I saw that there were some incorrect directories and files. The incorrect files had some content
+4. Then I created controllers/, models/, routes/ and middleware/ directories inside create-service directory using mkdir -p command
+5. Then I removed the old directories inside service/ which are controller/, model/, and router/ using rm -rf command which deletes them with its content forcefully
+6. I also deleted the wrong files app.js and readme.txt forcefully using rm -f. I did not delete its content
+7. I have written the content of readme.txt in README.md and the content of app.js in server.js using echo command
+8. With this I completed editing the folder create-service
+9. After that I made the folder executable using chmod +x command
+10. At last I checked whether the folder was executable or not using ./create-service
+
+Result: Now the directory create-service is free of incorrect files and folders. And it is executable with correct content in the required files. It also matched the expected structure 
