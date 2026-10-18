@@ -1,0 +1,34 @@
+Question Title: Data Breach Response
+
+Question Link: https://my.newtonschool.co/playground/code/orlr84xpc3oo?lecture_hash=vifkrugjcwth
+
+Solution:
+
+cp breach_response/evidence/log_dump.txt breach_response/log_dump.txt
+cd breach_response/
+chmod 755 evidence/
+mv evidence/ secure/
+chmod 555 secure/evidence/
+chmod 644 reports/incident_summary.txt
+echo "Breach confirmed" >> reports/incident_summary.txt
+chmod 444 reports/incident_summary.txt
+touch secure/forensics_report.txt
+echo "Forensics Complete" >> secure/forensics_report.txt
+chmod 600 secure/forensics_report.txt
+chmod 644 reports/incident_summary.txt
+echo "Escalated to security team" >> reports/incident_summary.txt
+chmod 444 reports/incident_summary.txt
+
+Approach:
+1. First I copied the file log_dump.txt which is in evidence/ which is in breach_response/ to breach_response/ using cp command.
+2. Then I navigated into breach_response/ using cd command.
+3. Then I had to move the evidence/ directory into secure/ directory which requires updating its own metadata so first I gave permission to evidence/ to write using chmod command.
+4. Then I moved the directory and restored back the permissions using chmod command once again.
+5. Then I had to write some content in reports/incident_summary.txt which required giving write permission. So I gave that permission to it.
+6. After writing that content I restored back the permission.
+7. After that I created a file in secure/ named forensics_report.txt using touch command.
+8. I wrote some content in it using echo command.
+9. Then I set the required permissions to it.
+10. I also had to write some content in reports/incident_summary.txt. So I gave the permission to write in it using chmod command and then I again restored back its permissions.
+
+Result: The directory breach_response/ is now fully correct with each file and folder present in its respective correct places with its required contents and with all required permissions. 
