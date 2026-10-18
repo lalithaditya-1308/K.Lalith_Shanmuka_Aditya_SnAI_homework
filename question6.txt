@@ -1,0 +1,22 @@
+Question Title: Simplify the Compilation Process
+
+Question Link: https://my.newtonschool.co/playground/code/xgprgcr1uvzm
+
+Solution: 
+
+touch build.sh
+echo '#!/bin/bash' > build.sh
+echo 'gcc hello.c -o hello' >> build.sh
+chmod +x build.sh
+./build.sh
+./hello
+
+Approach:
+1. First I created a file named build.sh using touch command.
+2. Then I used shebang operator to tell computer to use bash as an interpreter for the shell script.
+3. After that I used gcc compiler to compile the source code in C program.
+4. Then I gave permission for shell script build.sh to execute using chmod command.
+5. Then I used ./build.sh to run the script in current directory.
+6. And at last I used ./hello to run the C compiler in current directory.
+
+Result: I created a shell script build.sh and compiled hello.c into an executable named hello in it. 
