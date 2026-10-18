@@ -1,0 +1,20 @@
+Question Title: Deployment Project Permissions
+
+Question Link: https://my.newtonschool.co/playground/code/3wz3wv7c89fo?lecture_hash=vifkrugjcwth
+
+Solution:
+chmod 700 deployment/app/*.py 
+chmod 770 deployment/datasets/
+chmod 770 deployment/datasets/*csv
+chmod 644 deployment/docs/OVERVIEW.md
+chmod 755 deployment/bin/*.sh
+
+Approach:
+1. First according to question I gave permission that are required to files present in app/ directory present in deployment/ directory using chmod command.
+2. I gave permission to 3 files at a time using *., it helps us to give permission at a time. For the files present in app/ I used *.py to give permission.
+3. Next I gave permissions required to datasets/ directory.
+4. After giving permissions to datasets/ I gave permissions to files present inside it using *.csv.
+5. Then I gave permissions required to the file in docs/ directory inside deployment/ directory using chmod command.
+5. Finally I gave permissions required to the files present in bin/ present in deployment/ using *.sh.
+
+Result: I gave all the permissions required to every file and folder present inside deployment/ directory using chmod command and to give permission to every same kind of file in a particular directory I used *. which helps us to give permissions at a time.
