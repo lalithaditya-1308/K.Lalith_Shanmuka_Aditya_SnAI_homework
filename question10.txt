@@ -1,0 +1,28 @@
+Question Title: The Internship Project Setup
+
+Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+
+Solution:
+
+cd client-app
+git init
+echo "Hello" > index.html
+git add index.html
+echo "Bye" > app.js
+git add app.js
+git commit -m "Initial client files"
+git remote add origin https://github.com/startup/client-app.git
+git push -u origin main
+git log
+
+Approach: 
+1. First I navigated into client-app.
+2. Then I initialized git using git init.
+3. Then I wrote some content inside index.html and staged it.
+4. And I also wrote some content in app.js and staged it using git add.
+5. After that I commited both the files with a message 'Initial client files' using git commit -m.
+6. Then I linked my local repo to Github.
+7. After that I pushed the project setup into Github.
+8. At last I used git log to check my commit.
+
+Result: Finally I uploloaded the Internship Project Setup in Github. 
