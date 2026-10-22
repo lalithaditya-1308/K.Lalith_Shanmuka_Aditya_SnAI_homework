@@ -1,4 +1,4 @@
-Question Title: The Internship Project Setup
+Question Title:  The Internship Project Setup
 
 Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
 
